@@ -155,10 +155,21 @@
   }
 }
 @media (max-width: 576px) {
+  .home{
+    height: 100vh;
+    position:relative;
+    font-family: 'Sulphur Point', sans-serif;
+    h1{
+      font-size: 1rem;
+    }
+    h3{
+      font-size: 0.9rem;
+    }
+  }
   .zdo_drawer_menu .zdo_drawer_button {
     /*+++ Hamburger Button Position +++*/
-    top: 1em;
-    right: 1em;
+    top: 1.5em;
+    right: 1.5em;
   }
   .profile p{
       margin-bottom: 0px;

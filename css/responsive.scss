@@ -52,8 +52,8 @@
     font-size: 50px;
   }
   .card-icon{
-    margin-bottom: 10px;
-    p{margin-bottom: 10px}
+    margin-bottom: 20px;
+    p{margin-bottom: 15px}
   }
 
 
@@ -156,15 +156,8 @@
 }
 @media (max-width: 576px) {
   .home{
-    height: 100vh;
-    position:relative;
-    font-family: 'Sulphur Point', sans-serif;
-    h1{
-      font-size: 1rem;
-    }
-    h3{
-      font-size: 0.9rem;
-    }
+    h1{font-size: 1rem;}
+    h3{font-size: 0.9rem;}
   }
   .zdo_drawer_menu .zdo_drawer_button {
     /*+++ Hamburger Button Position +++*/
@@ -187,6 +180,7 @@
       width: 7.3rem;
     }
   }
+
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

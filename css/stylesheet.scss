@@ -399,7 +399,7 @@ table.info-table {
     font-size: 0.8rem;
     letter-spacing: 1.5px;
     color: $silver;
-    opacity: 0.5;  
+    opacity: 0.5;
   }
 }
 .icon-font{
@@ -442,10 +442,6 @@ table.info-table {
   margin-bottom: 0rem;
 }
 
-.works-text{
-  margin-top: 7%;
-}
-
 .works{
   h3{
     font-size: 1.3rem;
@@ -458,11 +454,7 @@ table.info-table {
   }
 }
 .img-wrap{
-  border: 1px solid #ddd;
-  width: 300px;
-  height: 226px;
-  margin: 0 auto;
-  overflow: hidden;
+  margin-bottom: 25px;
 }
 
 /* === works end === */
@@ -485,7 +477,7 @@ table.info-table {
   p {
     margin-bottom: 0;
     font-size: 1rem;
-    letter-spacing: .5px;
+    letter-spacing: .8px;
   }
 }
 .contact-colum-left{

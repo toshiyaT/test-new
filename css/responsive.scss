@@ -66,7 +66,7 @@
     filter: grayscale(0%);
   }
   .works-text{
-    padding: 5%;
+    padding: 0 5%;
   }
   .works-content{
     margin-bottom: 3rem;
@@ -164,10 +164,13 @@
     top: 1.5em;
     right: 1.5em;
   }
+  .head-title h2{
+    font-size: 1.8rem;
+  }
   .profile p{
       margin-bottom: 0px;
       line-height: 25px;
-      letter-spacing: .03rem;
+      letter-spacing: .05rem;
       font-size: 0.85rem;
   }
   table.info-table {
@@ -180,7 +183,28 @@
       width: 7.3rem;
     }
   }
-
+  .card-icon{
+    h3{font-size: 1.4rem;}
+    p{
+      font-size: 0.7rem;
+      letter-spacing: 1.2px;
+    }
+  }
+  .card-text{
+    p{
+      font-size: 0.85rem;
+      letter-spacing: .05rem;
+    }
+  }
+  .contact{
+    font-size: 0.85rem;
+  }
+  footer{
+    padding: 5% 6%;
+    a{font-size: 0.85rem;}
+  }
+  .icon{font-size: 2.2rem;}
+  .logo{font-size: 2.5rem;}
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

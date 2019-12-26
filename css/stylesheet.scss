@@ -319,6 +319,7 @@ position: fixed;
   letter-spacing: .2em;
 }
 
+
 .home-bg {
   line-height: .1em;
   color: rgba(0, 0, 0, 0.1);
@@ -380,7 +381,6 @@ table.info-table {
   margin: 0 auto;
   margin: 0 20px 0px 0;
   width: calc(33.333% - 40px / 3);
-
   border: double 3px $silver;
 }
 .card-original:nth-child(3n) {
@@ -545,6 +545,9 @@ table.info-table {
 footer{
   padding: 5% 6%;
   border-top: 1px solid $black;
+  a:hover{
+    opacity: 0.6;
+  }
 }
 
 .icon{
@@ -553,7 +556,6 @@ footer{
   padding-right: 10px;
 }
 .icon:hover{
-  opacity: 0.8;
   color: $black;
 }
 
@@ -585,4 +587,20 @@ footer{
   font-size: 12px;
 }
 
-/* === contact end === */
+.button-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: none;
+  transition: 0.5s;
+}
+.button-to-top a {
+  opacity: 0.6;
+}
+.button-to-top a:hover {
+  opacity: 1;
+}
+.icon-top{
+  font-size: 2.8rem;
+  color: $black;
+}

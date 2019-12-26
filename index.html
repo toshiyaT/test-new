@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Sulphur+Point:700&display=swap" rel="stylesheet">
 
+    <script src="https://sdk.form.run/js/v2/formrun.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
     <meta name="viewport"
@@ -121,7 +122,7 @@
             </table>
           </div>
 
-          <div class="info-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s" data-wow-offset="10">
+          <div class="info-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="10">
 
             <table class="info-table">
               <tr>
@@ -257,81 +258,135 @@
         <h2>Contact</h2>
         <div class="heading-underline"></div>
       </div>
+      <form class="formrun" action="https://form.run/api/v1/r/vkszhswvy8c09wwp1tqip3sq" method="post" data-formrun-confirm="true">
 
-      <div class="contact-container">
+        <div class="contact-container">
 
-        <div class="contact-colum">
-          <div class="contact-colum-left">
-            <p>お問い合わせ種別</p>
+          <div class="contact-colum">
+            <div class="contact-colum-left">
+              <p>お問い合わせ種別</p>
+            </div>
+            <div class="contact-colum-right">
+              <td><select class="select-test" name="問い合わせ種別">
+                <option>選択してください</option>
+                <option>お仕事のご依頼</option>
+                <option>お見積もり相談</option>
+                <option>その他のお問い合わせ</option>
+              </select></td>
+            </div>
           </div>
-          <div class="contact-colum-right">
-            <td><select class="select-test">
-              <option>選択してください</option>
-              <option>お仕事のご依頼</option>
-              <option>お見積もり相談</option>
-              <option>その他のお問い合わせ</option>
-            </select></td>
+
+          <div class="contact-colum">
+            <div class="contact-colum-left">
+              <p>お名前</p>
+              <span class="colum-tag">必須</span>
+            </div>
+            <div class="contact-colum-right">
+              <td><input name="お名前" placeholder="山田太郎" class="text-test" type="text" data-formrun-required></td>
+            </div>
           </div>
+
+          <div class="contact-colum">
+            <div class="contact-colum-left">
+              <p>ふりがな</p>
+              <span class="colum-tag">必須</span>
+            </div>
+            <div class="contact-colum-right">
+              <td><input name="ふりがな" placeholder="山田太郎" class="text-test" type="text" data-formrun-required></td>
+            </div>
+          </div>
+
+          <div class="contact-colum">
+            <div class="contact-colum-left">
+              <p>メールアドレス</p>
+              <span class="colum-tag">必須</span>
+            </div>
+            <div class="contact-colum-right">
+              <td><input name="メールアドレス" data-formrun-type="email" placeholder="info@example.com" class="text-test" type="text" data-formrun-required></td>
+            </div>
+          </div>
+
+
+          <div class="radio-container contact-colum">
+            <div class="contact-colum-left">
+              <p>ご依頼主様の事業形態</p>
+            </div>
+            <div class="contact-colum-right">
+              <label><input class="radio-test" type="radio" value="個人" name="形態"><span>個人</span></label>
+              <label><input class="radio-test" type="radio" value="法人" name="形態"><span>法人</span></label>
+            </div>
+          </div>
+
+
+          <div class="contact-colum colum-last">
+            <div class="contact-colum-left left-last">
+              <p>メッセージ</p>
+            </div>
+            <div class="contact-colum-right right-last">
+              <textarea name="お問い合わせ" class="textarea-text" data-formrun-required></textarea>
+            </div>
+          </div>
+
+          <div class="contact-center-rs">
+            <div class="check-box mb-origin">
+              <label><input class="check-test" type="checkbox" name="個人情報利用同意" data-formrun-required><span>個人情報保護方針に同意する</span></label>
+            </div>
+            <input class="submit-test" type="submit" value="送信する" data-formrun-submitting-text="送信中...">
+            <div data-formrun-show-if-error="お名前">お名前を入力してください</div>
+            <div data-formrun-show-if-error="ふりがな">ふりがなを入力してください</div>
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+            <div data-formrun-show-if-error="お問い合わせ">メッセージを入力してください</div>
+            <div data-formrun-show-if-error="個人情報利用同意">個人情報利用に同意してください</div>
+          </div>
+
+          <div class="modal" data-formrun-show-if-confirm>
+            <div class="modal__bg"></div>
+            <div class="modal__content">
+              <div class="modal-title">
+                <h3>メッセージの確認</h3>
+                <div class="title-under-line"></div>
+              </div>
+              <div class="modal-container">
+                <div class="modal-text">
+                  <h4 class="midashi-5">問い合わせ種別</h4>
+                  <p><span data-formrun-confirm-value="問い合わせ種別"></span></p>
+                </div>
+                <div class="modal-text">
+                  <h4 class="midashi-5">お名前</h4>
+                  <p><span data-formrun-confirm-value="お名前"></span></p>
+                </div>
+                <div class="modal-text">
+                  <h4 class="midashi-5">ふりがな</h4>
+                  <p><span data-formrun-confirm-value="ふりがな"></span></p>
+                </div>
+                <div class="modal-text">
+                  <h4 class="midashi-5">メールアドレス</h4>
+                  <p><span data-formrun-confirm-value="メールアドレス"></span></p>
+                </div>
+                <div class="modal-text">
+                  <h4 class="midashi-5">ご依頼主様の事業形態</h4>
+                  <p><span data-formrun-confirm-value="形態"></span></p>
+                </div>
+                <div class="modal-text">
+                  <h4 class="midashi-5">メッセージ</h4>
+                  <p><span data-formrun-confirm-value="お問い合わせ"></span></p>
+                </div>
+
+
+                <div class="modal-close">
+                  <input class="submit-test" type="submit" value="送信する" data-formrun-submitting-text="送信中...">
+                </div>
+
+              </div>
+
+
+              <a class="modal-close-btn2" data-formrun-back-button>
+                <i class="fas fa-times icon-close"></i>
+              </a>
+            </div><!--modal__inner-->
+          </div><!--modal-->
         </div>
-
-        <div class="contact-colum">
-          <div class="contact-colum-left">
-            <p>お名前</p>
-            <span class="colum-tag">必須</span>
-          </div>
-          <div class="contact-colum-right">
-            <td><input placeholder="山田太郎" class="text-test" type="text"></td>
-          </div>
-        </div>
-
-        <div class="contact-colum">
-          <div class="contact-colum-left">
-            <p>ふりがな</p>
-            <span class="colum-tag">必須</span>
-          </div>
-          <div class="contact-colum-right">
-            <td><input placeholder="山田太郎" class="text-test" type="text"></td>
-          </div>
-        </div>
-
-        <div class="contact-colum">
-          <div class="contact-colum-left">
-            <p>メールアドレス</p>
-          </div>
-          <div class="contact-colum-right">
-            <td><input placeholder="info@example.com" class="text-test" type="text"></td>
-          </div>
-        </div>
-
-
-        <div class="radio-container contact-colum">
-          <div class="contact-colum-left">
-            <p>性別</p>
-          </div>
-          <div class="contact-colum-right">
-            <label><input class="radio-test" type="radio" name="radio-      name"><span>男性</span></label>
-            <label><input class="radio-test" type="radio" name="radio-      name"><span>女性</span></label>
-          </div>
-        </div>
-
-
-        <div class="contact-colum colum-last">
-          <div class="contact-colum-left left-last">
-            <p>メッセージ</p>
-          </div>
-          <div class="contact-colum-right right-last">
-            <textarea class="textarea-text"></textarea>
-          </div>
-        </div>
-
-        <div class="contact-center-rs">
-          <div class="check-box mb-origin">
-            <label><input class="check-test" type="checkbox" name="check- name"><span>個人情報保護方針に同意する</span></label>
-          </div>
-          <input class="submit-test" type="submit" value="送信する >">
-        </div>
-
-      </div>
+      </form>
     </div>
 <!-- footer start============================================ -->
 <footer>

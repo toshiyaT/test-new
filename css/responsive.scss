@@ -147,12 +147,15 @@
   }
   .footer-logo{
     width: 100%;
-    color: silver;
     text-align: center;
   }
   .copy{
     position: static;
   }
+  .modal__content{
+    width: 85%;
+  }
+
 }
 @media (max-width: 576px) {
   .home{
@@ -205,6 +208,12 @@
   }
   .icon{font-size: 2.2rem;}
   .logo{font-size: 2.5rem;}
+  .modal{
+    h3{font-size: 1.4rem;
+       margin-bottom: 24px}
+    h4{font-size: 1rem;}
+    p,a{font-size: 0.85rem}
+  }
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

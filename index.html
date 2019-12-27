@@ -19,49 +19,48 @@
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
     <meta name="viewport"
     content="width=device-width,initial-scale=1.0">
-
   </head>
   <body>
-    <header>
+    <div id="header">
       <div class="zdo_drawer_menu">
-    		<div class="zdo_drawer_bg"></div>
-    		<button type="button" class="zdo_drawer_button">
-    			<span class="zdo_drawer_bar zdo_drawer_bar1"></span>
-    			<span class="zdo_drawer_bar zdo_drawer_bar2"></span>
-    			<span class="zdo_drawer_bar zdo_drawer_bar3"></span>
-    			<span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
-    			<span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
-    		</button>
-    		<nav class="zdo_drawer_nav_wrapper">
-    			<ul class="zdo_drawer_nav">
-    				<li>
-    					<a href="#home">
-    						Home
-    					</a>
-    				</li>
-    				<li>
-    					<a href="#profile">
-    						Profile
-    					</a>
-    				</li>
-    				<li>
-    					<a href="#service">
-    						Service
-    					</a>
-    				</li>
-    				<li>
-    					<a href="#works">
-    						Works
-    					</a>
-    				</li>
-    				<li>
-    					<a href="#contact">
-    						Contact
-    					</a>
-    				</li>
+        <div class="zdo_drawer_bg"></div>
+        <button type="button" class="zdo_drawer_button">
+          <span class="zdo_drawer_bar zdo_drawer_bar1"></span>
+          <span class="zdo_drawer_bar zdo_drawer_bar2"></span>
+          <span class="zdo_drawer_bar zdo_drawer_bar3"></span>
+          <span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
+          <span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
+        </button>
+        <nav class="zdo_drawer_nav_wrapper">
+          <ul class="zdo_drawer_nav">
+            <li>
+              <a href="#home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#profile">
+                Profile
+              </a>
+            </li>
+            <li>
+              <a href="#service">
+                Service
+              </a>
+            </li>
+            <li>
+              <a href="#works">
+                Works
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                Contact
+              </a>
+            </li>
           </ul>
 
-          <a class="btn-social-square headicon twitter">
+          <a href="" class="btn-social-square headicon twitter">
             <span class="fab fa-twitter"></span>
           </a>
           <a class="btn-social-square headicon facebook">
@@ -70,9 +69,10 @@
           <a class="btn-social-square headicon hatebu">
             <span class="fas fa-rss"></span>
           </a>
-    		</nav>
-    	</div>
-    </header>
+        </nav>
+      </div>
+    </div>
+
 
     <div class="home" id="home">
       <div class="home-bg">
@@ -95,6 +95,7 @@
         <p>2019年に法政大学を卒業したばかりの23歳、新卒フリーランスです。</p>
         <p>web周りの制作であれば、デザイン・コーディング・ライティング・写真撮影等まで全て一貫して承ります。</p>
         <p>どうぞお気軽にお問い合わせください。</p>
+        <a href="message-success.html">おちんちん</a>
       </div>
 
       <div class="profile-contents">
@@ -374,7 +375,10 @@
 
 
                 <div class="modal-close">
-                  <input class="submit-test" type="submit" value="送信する" data-formrun-submitting-text="送信中...">
+                  <input class="submit-test" type="submit" value="送信する">
+                </div>
+                <div class="text-center">
+                  <p>送信後は自動的にトップページへ戻ります。</p>
                 </div>
 
               </div>
